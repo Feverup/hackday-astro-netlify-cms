@@ -2,9 +2,15 @@
 
 Created with
 ```
-npm create astro@latest -- --template blog
+npm init astro || npm create astro@latest
 npm i astro-netlify-cms
 ```
+
+### Start the project locally
+Run `npm run dev`
+
+To visualize admin dashboard navigate to `/admin/` and login. You will see both blod and cities collections defined in `astro.config.mjs`
+
 
 Features:
 
