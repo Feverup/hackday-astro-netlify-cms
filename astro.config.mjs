@@ -13,6 +13,8 @@ export default defineConfig({
           name: 'git-gateway',
           branch: 'master',
         },
+		site_url: 'https://hackday-netlify-astro.netlify.app/',
+		display_url: 'https://hackday-netlify-astro.netlify.app/',
 		publish_mode: 'editorial_workflow',
 		media_folder: "src/assets",
 		public_folder: "/assets",
