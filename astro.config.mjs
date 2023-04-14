@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
 import NetlifyCMS from 'astro-netlify-cms'
 import sitemap from '@astrojs/sitemap';
 
@@ -7,7 +6,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://example.com',
   integrations: [
-    mdx(),
     sitemap(),
     NetlifyCMS({
       config: {
@@ -15,6 +13,9 @@ export default defineConfig({
           name: 'git-gateway',
           branch: 'master',
         },
+		publish_mode: 'editorial_workflow',
+		media_folder: "src/assets",
+		public_folder: "/assets",
         collections: [
         // Define a blog post collection
 		{
