@@ -35,6 +35,7 @@ export default defineConfig({
 			filter: {field: "filter", value: "city"},
 			create: true,
 			delete: true,
+			slug: "{{fields.name}}",
 			fields: [
 				{ name: 'name', widget: 'string', label: 'City Name' },
 				{ name: 'language', widget: 'string', label: 'Language' },
